@@ -6,7 +6,7 @@
 // Webhook: https://api.telegram.org/bot<token>/setwebhook?url=<url>
 
 // BOT API Configuration
-$botToken = "TOKEN"; #<------------------- PUT YOUR TOKEN HERE------------->#
+$botToken = "6984103172:AAF_dFxDwFdkLH8ngk1f_DesTg1wErHBB6A"; #<------------------- PUT YOUR TOKEN HERE------------->#
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -22,12 +22,12 @@ $message_id = $update["message"]["message_id"];
 
 // Start Commands
 if ((strpos($message, "/start") === 0)||(strpos($message, "/start") === 0)){
-sendMessage ($chatId, "─ Switchblade Checker Panel ─ %0A⁕ Registered as ➞ @$username %0A⁕ Use ➞ /cmds to show available commands. %0A⁕ Owner ➞ @pentagrvm | Update Logs ➞ @switchbladeupdate", $message_id);
+sendMessage ($chatId, "─ NoName Checker Panel ─ %0A⁕ Registered as ➞ @$username %0A⁕ Use ➞ /cmds to show available commands. %0A⁕ Owner ➞ @nonamepro169", $message_id);
 }
 
 // Cmds Commands
 elseif ((strpos($message, "!cmds") === 0)||(strpos($message, "/cmds") === 0)){
-sendMessage($chatId, "─ Switchblade Commands ─%0A%0A<b>➣ Stripe Charge/Auth [✅]</b>%0AUsage: <code>/chk cc|mm|yy|cvv</code>%0A%0A<b>➣ Check SK Key [✅]</b>%0AUsage: <code>/key sk_live</code>%0A%0A<b>➣ Check Info [✅]</b>%0AUsage: <code>/info</code>%0A%0A<b>➣ Check BIN Info [✅]</b>%0AUsage: <code>/bin xxxxxx</code>%0A%0AContact → <b>@pentagrvm</b>");
+sendMessage($chatId, "─ NoName Checker Commands ─%0A%0A<b>➣ Stripe Charge/Auth [✅]</b>%0AUsage: <code>/chk cc|mm|yy|cvv</code>%0A%0A<b>➣ Check SK Key [✅]</b>%0AUsage: <code>/key sk_live</code>%0A%0A<b>➣ Check Info [✅]</b>%0AUsage: <code>/info</code>%0A%0A<b>➣ Check BIN Info [✅]</b>%0AUsage: <code>/bin xxxxxx</code>%0A%0AContact → <b>@nonamepro169</b>");
 }
 
 // Bin Check Commands
@@ -220,11 +220,11 @@ $postcode = $matches1[1][0];
 
 // Proxy Configuration
 $rp1 = array(
-    1 => 'URPROXY',
-    2 => 'URPROXY',
-    3 => 'URPROXY',
-    4 => 'URPROXY',
-    5 => 'URPROXY',
+    1 => '38.154.227.167',
+    2 => '185.199.229.156',
+    3 => '185.199.228.220',
+    4 => '185.199.231.45',
+    5 => '188.74.210.207',
     ); 
     $rpt = array_rand($rp1);
     $rotate = $rp1[$rpt];
